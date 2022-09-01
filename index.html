@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 03 Formulário Desafio Avançado</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="page">
+
+    <header>
+      <h1>Avalie sua mentoria
+      </h1>
+
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?
+      </p>
+
+      <br>
+
+      <img src="images/img1.png" alt="Imagem com um balão com estrelas para avaliação">
+
+    </header>
+    
+    <div class="personal-information">
+      <h2>Informações pessoais
+      </h2>
+    </div>
+
+    <form>
+      <div class="my-form">
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <div class="input-myinfo">
+              <div class="col-2">
+                <label for="name">Name</label>
+                <input type="text" data-="name">
+              </div>
+              
+              <div class="col-2">
+                <label for="last-name">Sobrenome</label>
+                <input type="text" data-="last-name">
+              </div>
+            </div>
+          </div>
+
+          <div class="fieldset-wrapper">
+            <div class="input-wrapper">
+              <label for="">E-mail <span>(digite um e-mail válido)</span></label>
+              <input type="text" data-="my-info">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações do mentor</legend>
+
+            <div class="input-wrapper">
+              <label for="mentorship-name">Selecione quem foi o seu mentor</label>
+              <select id="mentorship-name">
+                <option value="maik">Maikão</option>
+                <option value="biro">Biro³</option>
+                <option value="uil">Uilian</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mentorship-feedback">Feedback sobre o mentor</label>
+              <textarea id="mentorship-feedback">
+              </textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="doubt">
+              <label for="doubt">Todas as minhas dúvidas foram esclarecidas
+                 durante a mentoria.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+
+            <legend>Agendando próxima mentoria</legend>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-data">Data <span> (DD/MM/AA)</span></label>
+                <input type="date" id="event-date">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-beggin">Das</label>
+                <input type="time" id="event-beggin">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="event-end">Até</label>
+                <input type="time" id="event-end">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <footer>
+          <input 
+          class="button"
+          type="submit"
+          value="Salvar"
+          form="my-form">
+        </footer>
+
+
+      </div>
+
+
+    </form>
+    
+  </div>
+</body>
+</html>
